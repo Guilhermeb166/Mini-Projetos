@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section id="container">
+        <h1>Temperature Converter <i class='bx bxs-thermometer' ></i></h1>
+        <div id="input-wrapper">
+            <div class="start">
+                <input type="number" name="entrada" id="entrada">
+                <select name="unidade" id="unidadeinicial">
+                    <option value="C">Celsius</option>
+                    <option value="F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                </select>
+            </div>
+            <div class="end">
+                <span>Converter para </span>
+                <select name="unidade" id="unidadefinal">
+                    <option value="C">Celsius</option>
+                    <option value="F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                </select>
+            </div>
+        </div>
+        <div id="resultado">
+            <button onclick="calcular()">Calcular</button>
+            <p></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

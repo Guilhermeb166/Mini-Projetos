@@ -1,0 +1,103 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-image: linear-gradient(190deg,#0984a6 ,rgb(0, 0, 0));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container {
+    background-color: #fff;
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#input-wrapper{
+    margin-top: 40px;
+    width: 100%;
+    
+}
+.start{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+select{
+    padding: 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.485);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.504);
+}
+border-bottom{
+    border-bottom:  solid rgba(0, 0, 0, 0.485);
+    padding: 5px;
+}
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.end span{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 22px;
+}
+.start input{
+    outline: none;
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.485);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.504);
+}
+#resultado button{
+    background-color: #179ec3;
+    color: #fff;
+    font:700 1em arial;
+    margin-top: 50px;
+    padding: 7px 15px;
+    width:150px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.537);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.588);
+    cursor: pointer;
+
+    &:hover{
+        background-color: #0d7491;
+    }
+}
+#resultado p{
+    font: 500 20px arial;
+    text-align: center;
+    margin-top: 30px;
+    
+}
